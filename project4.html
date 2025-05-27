@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website - Project Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-yellow-50 via-pink-100 to-indigo-100 min-h-screen text-gray-900 antialiased">
+  <!-- HERO SECTION -->
+  <section class="w-full py-20 px-4 flex flex-col items-center bg-white/90 shadow-sm relative z-10">
+    <div class="max-w-2xl w-full text-center mx-auto">
+      <span class="inline-block bg-yellow-100 text-yellow-700 rounded-full px-4 py-1 text-lg font-semibold mb-4">Featured Project</span>
+      <h1 class="text-6xl font-extrabold mb-6 tracking-tight bg-gradient-to-r from-yellow-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">Blog Website</h1>
+      <p class="text-2xl text-gray-600 mb-8">A minimalist blog platform focused on readability, clean typography, and a distraction-free reading experience for creators and readers alike.</p>
+    </div>
+  </section>
+
+  <!-- PROJECT IMAGE -->
+  <section class="w-full flex justify-center py-10 px-4 relative z-10">
+    <div class="bg-white rounded-2xl shadow-xl border border-yellow-100 p-4 max-w-2xl w-full flex flex-col items-center transition-transform duration-300 hover:scale-105">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Blog Website Screenshot" class="rounded-xl w-full max-w-lg h-64 object-cover shadow-md border-2 border-yellow-100"/>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="max-w-4xl w-full mx-auto px-4 py-10">
+    <h2 class="text-4xl font-bold text-center mb-10 text-yellow-700">Why This Blog Website?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+        <i class="fas fa-book-open text-yellow-500 text-4xl mb-5"></i>
+        <h3 class="font-semibold text-xl mb-3">Minimalist Design</h3>
+        <p class="text-gray-600 text-center text-lg">Focus on content with clean layouts and beautiful typography.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+        <i class="fas fa-rocket text-pink-500 text-4xl mb-5"></i>
+        <h3 class="font-semibold text-xl mb-3">SEO & Performance</h3>
+        <p class="text-gray-600 text-center text-lg">Built with Next.js for fast, SEO-friendly pages and global reach.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
+        <i class="fas fa-pen-nib text-indigo-500 text-4xl mb-5"></i>
+        <h3 class="font-semibold text-xl mb-3">Easy Content Creation</h3>
+        <p class="text-gray-600 text-center text-lg">Markdown support and distraction-free writing for creators.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK BADGES -->
+  <section class="max-w-3xl w-full mx-auto px-4 py-6 flex flex-wrap gap-3 justify-center">
+    <span class="inline-block rounded-full px-4 py-1 text-lg font-semibold bg-yellow-100 text-yellow-700"><i class="fab fa-figma mr-1"></i> Figma</span>
+    <span class="inline-block rounded-full px-4 py-1 text-lg font-semibold bg-pink-100 text-pink-700"><i class="fab fa-react mr-1"></i> Next.js</span>
+    <span class="inline-block rounded-full px-4 py-1 text-lg font-semibold bg-indigo-100 text-indigo-700"><i class="fas fa-file-alt mr-1"></i> Markdown</span>
+    <span class="inline-block rounded-full px-4 py-1 text-lg font-semibold bg-green-100 text-green-700"><i class="fas fa-rocket mr-1"></i> Vercel</span>
+  </section>
+
+  <!-- ACTION BUTTONS -->
+  <section class="max-w-2xl w-full mx-auto px-4 py-8 flex flex-col sm:flex-row gap-4 justify-center">
+    <a href="https://github.com/yourusername/blog-website" target="_blank" class="flex-1 px-6 py-4 rounded-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold shadow transition-all duration-200 text-center text-xl flex items-center justify-center gap-2"><i class="fab fa-github text-2xl"></i> View on GitHub</a>
+  </section>
+
+  <footer class="w-full text-center text-yellow-400 text-lg py-8 border-t border-yellow-100">&copy; 2024 Sharath Chandra R. All rights reserved.</footer>
+</body>
+</html> 
