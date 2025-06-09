@@ -81,25 +81,25 @@
     </div>
   </div>
   <!-- Hero Section: Overlapped Text on Image -->
-  <section id="hero" class="relative flex flex-col items-center justify-center w-full h-screen min-h-[600px] mb-12 overflow-hidden">
-    <!-- Fullscreen Background Image -->
-    <div class="absolute inset-0 w-full h-full z-0">
+  <section id="hero" class="relative flex flex-col items-center justify-center max-w-4xl mx-auto min-h-[340px] my-12 rounded-3xl shadow-xl p-0 sm:p-8 bg-transparent overflow-hidden">
+    <!-- Card-like Background Image Container -->
+    <div class="absolute inset-0 w-full h-full z-0 rounded-3xl overflow-hidden">
       <img src='https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80' alt='Background' class='w-full h-full object-cover object-center' style='filter: grayscale(1) brightness(0.4);'/>
       <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-neutral-900/80"></div>
     </div>
     <!-- Profile Image Fade In -->
-    <div class="relative flex flex-col items-center w-full z-10" style="margin-top: 2vh;">
-      <img src="IMG_1906.JPG" alt="Profile" class="rounded-full w-56 h-56 sm:w-72 sm:h-72 object-cover shadow-2xl border-4 border-neutral-800 mb-8 fade-in-profile" style="animation: fadeInProfile 1.4s cubic-bezier(.4,0,.2,1) 0.2s both; margin-top: -60px;" />
-      <h2 class="text-5xl sm:text-8xl font-extrabold tracking-tight text-white hero-fade mt-2 mb-8 text-center" style="font-family: 'Poppins', 'Inter', sans-serif; letter-spacing:0.01em; z-index:2; pointer-events:none; text-shadow: 0 4px 32px rgba(0,0,0,0.7);">
+    <div class="relative flex flex-col items-center w-full z-10 p-6 sm:p-10">
+      <img src="IMG_1906.JPG" alt="Profile" class="rounded-full w-40 h-40 sm:w-56 sm:h-56 object-cover shadow-2xl border-4 border-neutral-800 mb-6 fade-in-profile" style="animation: fadeInProfile 1.4s cubic-bezier(.4,0,.2,1) 0.2s both; margin-top: -40px;" />
+      <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white hero-fade mt-2 mb-6 text-center" style="font-family: 'Poppins', 'Inter', sans-serif; letter-spacing:0.01em; z-index:2; pointer-events:none; text-shadow: 0 4px 32px rgba(0,0,0,0.7);">
         SHARATH CHANDRA R
       </h2>
       <div class="flex flex-col items-center w-full z-10 mt-2">
-        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-4 hero-fade text-center" style="font-family: 'Poppins', 'Inter', sans-serif;">
+        <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-4 hero-fade text-center" style="font-family: 'Poppins', 'Inter', sans-serif;">
           "I don't just write code—I script possibilities.I see patterns where others see problems, and I turn ideas into intuitive experiences. This isn't just tech—it's my way of leaving a signature on the future."
         </p>
         <a href="#work"
-           class="relative inline-flex items-center justify-center px-10 py-4 mt-4 rounded-full font-bold text-xl hero-fade group overflow-hidden"
-           style="background: rgba(30,30,40,0.7); backdrop-filter: blur(8px); box-shadow: 0 4px 24px 0 rgba(80,80,180,0.18), 0 0 0 2px rgba(120,0,255,0.12); border: 2px solid transparent; min-width: 240px; min-height: 64px;">
+           class="relative inline-flex items-center justify-center px-8 py-3 mt-4 rounded-full font-bold text-lg hero-fade group overflow-hidden"
+           style="background: rgba(30,30,40,0.7); backdrop-filter: blur(8px); box-shadow: 0 4px 24px 0 rgba(80,80,180,0.18), 0 0 0 2px rgba(120,0,255,0.12); border: 2px solid transparent; min-width: 180px; min-height: 48px;">
           <!-- Animated Gradient Border -->
           <span class="absolute inset-0 rounded-full pointer-events-none z-0 border-2 border-transparent group-hover:border-indigo-500 group-hover:animate-border-glow"></span>
           <!-- Glassy Background -->
@@ -549,6 +549,26 @@
         margin-left: auto !important;
         margin-right: auto !important;
       }
+    }
+  </style>
+  <style>
+    @media (max-width: 640px) {
+      #navbar-sticky { padding-top: 0.5rem !important; }
+      .navbar-outer nav { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+      #hero {
+        min-height: 420px !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
+      #hero h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 1.2rem !important;
+      }
+      #hero p {
+        font-size: 1rem !important;
+        margin-bottom: 1rem !important;
+      }
+      #work { margin-top: 2.5rem !important; }
     }
   </style>
  </body>
