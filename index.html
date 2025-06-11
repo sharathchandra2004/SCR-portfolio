@@ -349,8 +349,14 @@
           <h2 class="text-6xl font-extrabold leading-tight mb-8">Let's<br>Connect</h2>
           <p class="text-lg mb-8 text-gray-300">Whether you're curious, stuck, or dreaming up your next big idea — I'm all ears. If you need a hand, a fresh perspective, or a developer who thinks beyond the code, just drop a message. Let's turn ideas into something real.</p>
           <hr class="border-gray-700 mb-8">
-          <div class="flex items-center mb-4"><i class="fas fa-phone-alt mr-4"></i> <span class="text-lg">+91 9036325795</span></div>
-          <div class="flex items-center"><i class="fas fa-envelope mr-4"></i> <span class="text-lg">crsharath242004@gmail.com</span></div>
+          <div class="flex items-center mb-4 space-x-8 justify-start">
+            <a href="https://www.linkedin.com/in/sharath-chandra-r/" target="_blank" rel="noopener noreferrer" class="icon-link group">
+              <i class="fab fa-linkedin fa-2x text-blue-500 transition-transform"></i>
+            </a>
+            <a href="https://github.com/sharathchandra2004" target="_blank" rel="noopener noreferrer" class="icon-link group">
+              <i class="fab fa-github fa-2x text-gray-300 transition-transform"></i>
+            </a>
+          </div>
         </div>
         <!-- Right: Form -->
         <div class="flex-1 bg-neutral-900/80 flex items-center justify-center p-8 md:p-16">
@@ -569,6 +575,20 @@
         margin-bottom: 1rem !important;
       }
       #work { margin-top: 2.5rem !important; }
+    }
+  </style>
+  <style>
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s cubic-bezier(.4,0,.2,1), box-shadow 0.25s cubic-bezier(.4,0,.2,1);
+    }
+    .icon-link:hover i, .icon-link:focus i {
+      transform: scale(1.25) rotate(-6deg);
+      box-shadow: 0 4px 24px 0 rgba(80,80,180,0.18), 0 0 0 2px rgba(120,0,255,0.12);
+      color: #6366f1 !important;
+      filter: drop-shadow(0 0 8px #6366f1);
     }
   </style>
  </body>
